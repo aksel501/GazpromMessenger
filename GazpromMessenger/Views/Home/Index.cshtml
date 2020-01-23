@@ -1,0 +1,10 @@
+﻿@model MessageCombinedViewModel
+
+@{
+    ViewData["Title"] = "View";
+}
+
+@{
+    Html.RenderPartial("Create", Model.Create);
+    Html.RenderPartial("Display", Model.Display);
+}

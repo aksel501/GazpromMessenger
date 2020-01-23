@@ -1,0 +1,45 @@
+﻿@model GazpromMessenger.Models.MessageCreateViewModel
+
+<script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div class="text-center">
+    <div class="wrap">
+        <div class="message">
+            <input type="text" id="messageText" class="messageWindow" placeholder="Type your message here...">
+            <button id="sendButton" class="sendButton">
+                Send
+                <i class="fa fa-search"> </i>
+            </button>
+        </div>
+    </div>
+    <div>
+        <label id="successLabel"></label>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#sendButton").click(function () {
+            if ($('#messageText').val() == "") {
+                alert("Message text cannot be empty");
+            }
+            if ($('#messageText').val().length > 150) {
+                alert("Message text cannot be longet than 150 characters");
+            }
+            else {
+                var url = "@Url.Action("Create","Home")";
+                var model = { Description: $("#messageText").val() };
+                $.post(url, model, function (res) {
+                    if (res) {
+                        $("#successLabel").text("Message Sent");
+                    }
+                    else {
+                        $("#successLabel").text("Message Not Sent");
+
+                    }
+                    $('#messageText').val("");
+                });
+            }
+        });
+    });
+</script>

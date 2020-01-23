@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GazpromMessenger", "GazpromMessenger\GazpromMessenger.csproj", "{E04BCD63-F685-4A75-840C-8B15D8D7CD43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQChecker", "MSMQChecker\MSMQChecker.csproj", "{8A51FE8F-F9B5-461D-A0BE-9AAF967FF738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E04BCD63-F685-4A75-840C-8B15D8D7CD43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E04BCD63-F685-4A75-840C-8B15D8D7CD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E04BCD63-F685-4A75-840C-8B15D8D7CD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E04BCD63-F685-4A75-840C-8B15D8D7CD43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A51FE8F-F9B5-461D-A0BE-9AAF967FF738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A51FE8F-F9B5-461D-A0BE-9AAF967FF738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A51FE8F-F9B5-461D-A0BE-9AAF967FF738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A51FE8F-F9B5-461D-A0BE-9AAF967FF738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {443D788F-275E-4082-A9CF-AC75A99F4805}
+	EndGlobalSection
+EndGlobal
